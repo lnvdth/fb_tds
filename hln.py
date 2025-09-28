@@ -44,9 +44,7 @@ for dvt in range(3,0,-1):
 os.system('clear')
 print(logo)
 tokentds=input(white+'NHẬP'+blue+' ACCESS_TOKEN TDS: '+white)
-#tokentds='TDS9JSMxIXZ2V2ciojIyVmdlNnIsISNwgXZ2lmZiojIyV2c1Jye'
 tokenfb=input(white+'NHẬP'+blue+' TOKEN FACEBOOK: '+white)
-#tokenfb='EAAGNO4a7r2wBABQ4ZBph2O7IVnyDrBy1EdZATiwt9lF6aj1dFABfoScG4AXr0XNJJdRrYdFVGitvJVmRC1gFC6jY8uae28cVfLL8tDFuVYtZAaMEjeNV7ZAfuZBrVZCQEA4drfZAxs6gMQY8E73T6arNB6zx0Ugxg2BnNiGZAPoCM0sVaqEQT1CS'
 #dlj=int(input(blue+'NHẬP '+white+'DELAY: '+blue))
 stop=int(input(blue+'NHẬP '+white+'SỐ NHIỆM VỤ: '+blue))
 delay_job=int(input(blue+'NHẬP '+white+'DELAY: '+blue))
@@ -104,4 +102,5 @@ ttacc=requests.get('https://traodoisub.com/api/?fields=profile&access_token='+st
 if (tsnv-snv+i+1)==stop:print(white+' CHẠY TOOL SUCCESS, TỔNG XU:',yellow+str(ttacc['data']['xu']))
 if block==stop_block:print(red+like.json()['error']['message'])
 if 'error'  in like.text and '190' in like.text:print(red+like.json()['error']['message'])
+
 print(white+'THANKS BẠN ĐÃ SỬ DỤNG TOOL CỦA',fivex+' !')
